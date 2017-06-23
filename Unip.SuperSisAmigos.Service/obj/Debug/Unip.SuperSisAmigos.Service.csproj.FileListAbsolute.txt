@@ -1,0 +1,11 @@
+E:\Cursos\LGroup\Unip.SuperSisAmigo.UI.Web\Unip.SuperSisAmigos.Service\bin\Debug\Unip.SuperSisAmigos.Service.dll
+E:\Cursos\LGroup\Unip.SuperSisAmigo.UI.Web\Unip.SuperSisAmigos.Service\bin\Debug\Unip.SuperSisAmigos.Service.pdb
+E:\Cursos\LGroup\Unip.SuperSisAmigo.UI.Web\Unip.SuperSisAmigos.Service\bin\Debug\Unip.SuperSisAmigo.DataAccess.dll
+E:\Cursos\LGroup\Unip.SuperSisAmigo.UI.Web\Unip.SuperSisAmigos.Service\bin\Debug\Unip.SuperSisAmigo.Entities.dll
+E:\Cursos\LGroup\Unip.SuperSisAmigo.UI.Web\Unip.SuperSisAmigos.Service\bin\Debug\EntityFramework.dll
+E:\Cursos\LGroup\Unip.SuperSisAmigo.UI.Web\Unip.SuperSisAmigos.Service\bin\Debug\Unip.SuperSisAmigo.DataAccess.pdb
+E:\Cursos\LGroup\Unip.SuperSisAmigo.UI.Web\Unip.SuperSisAmigos.Service\bin\Debug\Unip.SuperSisAmigo.Entities.pdb
+E:\Cursos\LGroup\Unip.SuperSisAmigo.UI.Web\Unip.SuperSisAmigos.Service\bin\Debug\EntityFramework.xml
+E:\Cursos\LGroup\Unip.SuperSisAmigo.UI.Web\Unip.SuperSisAmigos.Service\obj\Debug\Unip.SuperSisAmigos.Service.csprojResolveAssemblyReference.cache
+E:\Cursos\LGroup\Unip.SuperSisAmigo.UI.Web\Unip.SuperSisAmigos.Service\obj\Debug\Unip.SuperSisAmigos.Service.dll
+E:\Cursos\LGroup\Unip.SuperSisAmigo.UI.Web\Unip.SuperSisAmigos.Service\obj\Debug\Unip.SuperSisAmigos.Service.pdb

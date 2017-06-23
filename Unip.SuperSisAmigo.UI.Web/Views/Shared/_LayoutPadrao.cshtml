@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Titulo</title>
+
+    @*Bootstrap é passado agora é MATERIALIZE CSS é uma biblioteca que foi feita utilizando as boas práticas de design
+        recomendadas pelo google. Essas boas praticas focam em sombras, bordas e movimentos dos campos.
+        O nome senior é Google Material Design*@
+    <link href="~/content/materialize/css/materialize.min.css" rel="stylesheet" />
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="~/content/themes/base/datepicker.css" rel="stylesheet" />
+    <style>
+        .material-icons {
+            font-family: 'Material Icons';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            word-wrap: normal;
+            -webkit-font-feature-settings: 'liga';
+            -webkit-font-smoothing: antialiased;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+
+            <nav>
+                <div class="nav-wrapper">
+                    <a href="#!" class="brand-logo"><h5> @ViewBag.Titulo</h5></a>
+                    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        @*Temos um html helpers para hyperlinks
+                            1 Texto
+                            2 Nome da Action
+                            3 Nome da Controler
+                            4 Dados da Rota (URL) RotaRuValues
+                            5 Os atributos html (HtmlAttributes as configuraçoes TAG<a>)*@
+                        <li>@Html.ActionLink("Home", "Index", "Home", new { Area = "" }, null)</li>
+                        <li><a href="/Amigo/Listar">Listar Amigos</a></li>
+                        <li><a href="/Amigo/Editar">Editar Amigos</a></li>
+                        <li><a href="/Amigo/Cadastrar">Cadastrar Amigo</a></li>
+
+                    </ul>
+                    <ul class="side-nav" id="mobile-demo">
+                        <li><a href="/Home">Home</a></li>
+                        <li><a href="/Amigo/Listar">Listar Amigos</a></li>
+                        <li><a href="/Amigo/Editar">Editar Amigos</a></li>
+                        <li><a href="/Amigo/Cadastrar">Cadastrar Amigo</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    @*Criamos uma secao pra exibição de mensagens de sucesso
+        Controlamos a visibilidade do componente de sucesso com a estrutura avançada do c# chamada IF, so temos que exibir o componente s etiver mensagem*@
+
+    @if (TempData["Sucesso"] != null)
+    {
+        <section>
+            <div>
+                @Html.Partial("_PartialSucesso")
+            </div>
+        </section>
+    }
+
+    <section>
+        <div>
+            @RenderBody()
+        </div>
+    </section>
+    @*<footer>
+            <div>Todos os direitos reservados.</div>
+        </footer>*@
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Footer Content</h5>
+                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2014 Copyright Text
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
+    </footer>
+
+    @*Importamos todos os scripts sempre no final da pagina para nao segurar o carregamento da página, assim vai carregar mais rápido.
+        1 - Colocar os data annotations
+        2 - Colocar o html helper validationMessageFor
+        3 - O disparador das mensagens de validação é o JQuery Validate Unobtrosive(Baixamos via Nuget Microsoft JQuery Unobtrosive)
+    *@
+    @*<script src="~/Scripts/jquery-1.8.0.min.js"></script>*@
+    @*<script src="~/Scripts/jquery-2.1.4.min.js"></script>
+        <script src="~/Scripts/jquery.validate.min.js"></script>
+        <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+        <script src="~/Scripts/materialize/materialize.min.js"></script>
+        <script src="~/Scripts/jquery.maskedinput.min.js"></script>
+        <script src="~/Scripts/jquery-ui-1.11.4.min.js"></script>*@
+
+    @*Todos os arquivos de scripts foram agrupados via BUNDLE*@
+    @Scripts.Render("~/JS")
+
+    <script>
+        //Configuramos o menu versão mobile do Materalaze CSS
+        //E esse Jquery que abre o menu Lateral
+        $(".button-collapse").sideNav();
+    </script>
+    @*Ao renderizar uma section o asp.net mvc obriga a criar a section em todas as telas do projeto,
+        adicione o FALSE como parametro na section e a seção será opcional*@
+    @RenderSection("MeusScripts", false)
+
+</body>
+</html>

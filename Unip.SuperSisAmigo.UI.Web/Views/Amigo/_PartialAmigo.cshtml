@@ -1,0 +1,66 @@
+﻿@*
+    Criamos um partial view - página ou componente reutilizavel de html
+    Lá no Web Forms equivale ao Web User Control (.ASCX)
+    Poderia ter criado um componente de menus com permissões
+    Poderia ter criado um coponente de mensagem de erro
+    Poderia ter criado um componente de exibição de modais
+*@
+
+@model AmigoViewModel
+
+@*o using no RAZOR abre e fecha a TAG, no caso abaixo ele fez a mesma coisa a seguir: <form> </form>
+    Nem todos os elementos foram portados para os html helpers. Não tem <table>, <div>, <ul>, <button>*@
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(x => x.Codigo)
+    <div class="card-panel red darken-1">
+        @*Exibimos a mensagem de validação via DataAnotationa*@
+        @Html.ValidationMessage("HACKER")
+    </div>
+    <div class="input-field">
+        @Html.LabelFor(x => x.Nome)
+        @Html.TextBoxFor(x => x.Nome, new { maxlength = "30" })
+        @Html.ValidationMessageFor(x => x.Nome)
+    </div>
+    <div class="input-field">
+        @Html.LabelFor(x => x.Email)
+        @Html.TextBoxFor(x => x.Email)
+        @Html.ValidationMessageFor(x => x.Email)
+    </div>
+    <div class="input-field">
+        @Html.LabelFor(x => x.Telefone)
+        @Html.TextBoxFor(x => x.Telefone)
+        @Html.ValidationMessageFor(x => x.Telefone)
+    </div>
+    <div class="input-field">
+        @Html.LabelFor(x => x.DataNascimento, new { @class = "datepicker", type = "date" })
+        @Html.TextBoxFor(x => x.DataNascimento)
+        @Html.ValidationMessageFor(x => x.DataNascimento)
+    </div>
+
+    <div class="input-field">
+        @Html.DropDownListFor(x => x.CodigoSexo, Model.ListaSexos, "Selecione...")
+        @Html.LabelFor(x => x.CodigoSexo)
+        @Html.ValidationMessageFor(x => x.CodigoSexo)
+    </div>
+    <div class="input-field">
+        @Html.DropDownListFor(x => x.CodigoEstadoCivil, Model.ListaCivis, "Selecione...")
+        @Html.LabelFor(x => x.CodigoEstadoCivil)
+        @Html.ValidationMessageFor(x => x.CodigoEstadoCivil)
+
+    </div>
+    <br />
+    <br />
+    <div>
+        @Html.Button("limpar", "Limpar", "reset", "btn waves-effect waves-light", "material-icons", "Limpar", "send")
+        @*<input type="reset" id="limpar" name="limpar" value="Limpar" />*@
+        @*<button class="btn waves-effect waves-light" type="reset" id="limpar" name="limpar">Limpar</button>*@
+        @*<input type="submit" id="salvar" name="salvar" value="Salvar" />*@
+
+        <button class="btn waves-effect waves-light" type="submit" name="action">Salvar</button>
+    </div>
+    @*Esse comando BR é um metodo de extensão*@
+    @Html.Br()
+
+
+}

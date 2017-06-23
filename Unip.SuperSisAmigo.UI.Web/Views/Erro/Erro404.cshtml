@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Titulo = "Página não Encontrada";
+}
+
+<div>
+    <img src="~/content/imagem/erro.png" />
+</div>
+<div>
+    <p>Data e Hora: @DateTime.Now</p>
+</div>
+
+<div>
+    <p>IP: @Request.UserHostAddress</p>
+</div>
+
+<div>
+    @*O parametro ASpErroPath vem autoaticamente na URL dentro dele vem a pagina que o usuario tentou acessar*@
+    <p>Página: @Request["AspxErrorPath"]</p>
+</div>
+
+<div>
+    <p>Entrar em contato com a equipe de internet no ramal 5935 falar com Diego o DIDI Bumbum Guloso</p>
+</div>

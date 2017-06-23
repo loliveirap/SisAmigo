@@ -1,0 +1,15 @@
+﻿
+@{
+    //ViewBag é uma forma de armazenamento de dados exclusiva do mvc
+    //Sempre que quisermos levar infomrações da página filha para a página pai 
+    //Uma das formas é de levar dentro de uma viewbag
+    ViewBag.Titulo = "Editar";
+    //Layout = "~/Views/Shared/_LayoutPadrao.cshtml";
+}
+
+
+@Html.Partial("_PartialAmigo")
+@section MeusScripts{
+
+    <script src="~/Scripts/mascaras.js"></script>
+}

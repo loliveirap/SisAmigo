@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Titulo</title>
+
+    @*Pra deixar as paginas com cara de aplicativo utilizamos a biblioteca RATCHET*@
+    <link href="~/content/ratchet.min.css" rel="stylesheet" />
+</head>
+<body>
+    <header class="bar bar-nav">
+        <h1 class="title">@ViewBag.Titulo</h1>
+    </header>
+    @*O MVC sabe se é Mobile atraves do HEADER (Cabeçalho) USER-AGENT
+        Se ele detecta que é um navegador MOBILE ele sobe as versões MOBILE de Página
+        Podemos fazer Mobile (Pagina PAI, filha ou partial view
+    Para testar as páginas mobile baixar o emulador de IPHONE e IPAD
+    Eletronic Plum Studio)*@
+    <section>
+        @RenderBody()
+    </section>
+    <footer>
+        <nav class="bar bar-tab">
+            <a class="tab-item active" href="/Home">
+                <span class="icon icon-home"></span>
+                <span class="tab-label">Home</span>
+            </a>
+            <a class="tab-item" href="/Amigo/Listar">
+                <span class="icon icon-person"></span>
+                <span class="tab-label">Listar</span>
+            </a>
+            <a class="tab-item" href="/Amigo/Cadastrar">
+                <span class="icon icon-star-filled"></span>
+                <span class="tab-label">Cadastrar</span>
+            </a>
+            <a class="tab-item" href="#">
+                <span class="icon icon-search"></span>
+                <span class="tab-label">Sair</span>
+            </a>            
+        </nav>
+    </footer>
+
+    @RenderSection("MeusScripts",false)
+
+</body>
+</html>

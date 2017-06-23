@@ -1,0 +1,5 @@
+E:\Cursos\LGroup\Unip.SuperSisAmigo.UI.Web\Unip.SuperSisAmigo.Entities\bin\Debug\Unip.SuperSisAmigo.Entities.dll
+E:\Cursos\LGroup\Unip.SuperSisAmigo.UI.Web\Unip.SuperSisAmigo.Entities\bin\Debug\Unip.SuperSisAmigo.Entities.pdb
+E:\Cursos\LGroup\Unip.SuperSisAmigo.UI.Web\Unip.SuperSisAmigo.Entities\obj\Debug\Unip.SuperSisAmigo.Entities.dll
+E:\Cursos\LGroup\Unip.SuperSisAmigo.UI.Web\Unip.SuperSisAmigo.Entities\obj\Debug\Unip.SuperSisAmigo.Entities.pdb
+E:\Cursos\LGroup\Unip.SuperSisAmigo.UI.Web\Unip.SuperSisAmigo.Entities\obj\Debug\Unip.SuperSisAmigo.Entities.csprojResolveAssemblyReference.cache

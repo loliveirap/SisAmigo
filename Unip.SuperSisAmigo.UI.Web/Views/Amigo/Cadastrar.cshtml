@@ -1,0 +1,28 @@
+﻿@*Fizemos a tipagem da tela usando o MODEL BINDER
+    Sincronização da View cin a view model(Model)
+    Tudo que o usuario usar digitar na tela ele automaticamente salva nos campos da classe View Model*@
+@*Comentario em Razor @@ não são envidos para o navegador *@
+@*POLYMER - criar sua propria biblioteca com TAG html*@
+
+
+
+@{
+    //ViewBag é uma forma de armazenamento de dados exclusiva do mvc
+    //Sempre que quisermos levar infomrações da página filha para a página pai
+    //Uma das formas é de levar dentro de uma viewbag
+    ViewBag.Titulo = "Cadastrar";
+    //Layout = "~/Views/Shared/_LayoutPadrao.cshtml";
+}
+
+@Html.Partial("_PartialAmigo")
+
+@*Criamos uma sessão de scripts para setar a mascara nos campos (TEL e DATA)
+    Tomar cuidado ao programar em java script nas paginas filhas
+    O Jquery esta no final da pagina pai e o script da pagina filha fica dentro do RenderBody
+    Temos que dar um jeito de transportar o script para a pagina pais na ordem das bibliotecas*@
+
+@section MeusScripts{
+    
+<script src="~/Scripts/mascaras.js"></script>
+}
+

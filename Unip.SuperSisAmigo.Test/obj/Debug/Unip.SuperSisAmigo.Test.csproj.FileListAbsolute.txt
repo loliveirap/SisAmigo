@@ -1,0 +1,16 @@
+E:\Cursos\LGroup\Unip.SuperSisAmigo.UI.Web\Unip.SuperSisAmigo.Test\bin\Debug\Unip.SuperSisAmigo.Test.dll
+E:\Cursos\LGroup\Unip.SuperSisAmigo.UI.Web\Unip.SuperSisAmigo.Test\bin\Debug\Unip.SuperSisAmigo.Test.pdb
+E:\Cursos\LGroup\Unip.SuperSisAmigo.UI.Web\Unip.SuperSisAmigo.Test\bin\Debug\nunit.framework.dll
+E:\Cursos\LGroup\Unip.SuperSisAmigo.UI.Web\Unip.SuperSisAmigo.Test\bin\Debug\nunit.framework.xml
+E:\Cursos\LGroup\Unip.SuperSisAmigo.UI.Web\Unip.SuperSisAmigo.Test\obj\Debug\Unip.SuperSisAmigo.Test.csprojResolveAssemblyReference.cache
+E:\Cursos\LGroup\Unip.SuperSisAmigo.UI.Web\Unip.SuperSisAmigo.Test\obj\Debug\Unip.SuperSisAmigo.Test.dll
+E:\Cursos\LGroup\Unip.SuperSisAmigo.UI.Web\Unip.SuperSisAmigo.Test\obj\Debug\Unip.SuperSisAmigo.Test.pdb
+E:\Cursos\LGroup\Unip.SuperSisAmigo.UI.Web\Unip.SuperSisAmigo.Test\bin\Debug\Unip.SuperSisAmigo.DataAccess.dll
+E:\Cursos\LGroup\Unip.SuperSisAmigo.UI.Web\Unip.SuperSisAmigo.Test\bin\Debug\EntityFramework.dll
+E:\Cursos\LGroup\Unip.SuperSisAmigo.UI.Web\Unip.SuperSisAmigo.Test\bin\Debug\Unip.SuperSisAmigo.DataAccess.pdb
+E:\Cursos\LGroup\Unip.SuperSisAmigo.UI.Web\Unip.SuperSisAmigo.Test\bin\Debug\EntityFramework.xml
+E:\Cursos\LGroup\Unip.SuperSisAmigo.UI.Web\Unip.SuperSisAmigo.Test\bin\Debug\Unip.SuperSisAmigo.Test.dll.config
+E:\Cursos\LGroup\Unip.SuperSisAmigo.UI.Web\Unip.SuperSisAmigo.Test\bin\Debug\EntityFramework.SqlServer.dll
+E:\Cursos\LGroup\Unip.SuperSisAmigo.UI.Web\Unip.SuperSisAmigo.Test\bin\Debug\EntityFramework.SqlServer.xml
+E:\Cursos\LGroup\Unip.SuperSisAmigo.UI.Web\Unip.SuperSisAmigo.Test\bin\Debug\Unip.SuperSisAmigo.Entities.dll
+E:\Cursos\LGroup\Unip.SuperSisAmigo.UI.Web\Unip.SuperSisAmigo.Test\bin\Debug\Unip.SuperSisAmigo.Entities.pdb

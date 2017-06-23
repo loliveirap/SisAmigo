@@ -1,0 +1,19 @@
+﻿
+@*Pra capturar os detalhes do erro temos que fazer o model binding na classe abaixo
+    ele trabalha em conjunto com a classe HANDLEERROR*@
+@model HandleErrorInfo
+@{
+    ViewBag.Titulo = "Página Genérica de Erro";
+}
+
+<div>
+    <p>Nome do Controller: @Model.ControllerName</p>
+</div>
+
+<div>
+    <p>Nome da Action: @Model.ActionName</p>
+</div>
+
+<div>
+    <p>Mensagem de Erro: @Model.Exception.Message </p>
+</div>

@@ -1,0 +1,29 @@
+﻿@model UsuarioViewModel
+
+@using (Html.BeginForm())
+{
+    <div class="card-panel teal lighten-2">
+        @*Exibimos a mensagem de validação via DataAnotationa*@
+        @Html.ValidationMessage("HACKER")
+    </div>
+    <div>
+        @Html.LabelFor(x => x.Email)
+        @Html.TextBoxFor(x => x.Email)
+        @Html.ValidationMessageFor(x => x.Email)
+    </div>
+    
+    <div>
+        @Html.LabelFor(x => x.Senha)
+        @Html.PasswordFor(x => x.Senha)
+        @Html.ValidationMessageFor(x => x.Senha)
+    </div>
+
+    <button class="btn waves-effect waves-light" type="reset" name="Limpar">
+        Limpar
+        <i class="material-icons">send</i>
+    </button>
+    <button class="btn waves-effect waves-light" type="submit" name="action">
+        Entrar
+        <i class="material-icons">send</i>
+    </button>
+}

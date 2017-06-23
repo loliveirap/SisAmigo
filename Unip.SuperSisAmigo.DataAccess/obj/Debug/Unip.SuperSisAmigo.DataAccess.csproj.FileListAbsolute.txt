@@ -1,0 +1,15 @@
+E:\Cursos\LGroup\Unip.SuperSisAmigo.UI.Web\Unip.SuperSisAmigo.DataAccess\bin\Debug\Unip.SuperSisAmigo.DataAccess.dll.config
+E:\Cursos\LGroup\Unip.SuperSisAmigo.UI.Web\Unip.SuperSisAmigo.DataAccess\bin\Debug\Unip.SuperSisAmigo.DataAccess.dll
+E:\Cursos\LGroup\Unip.SuperSisAmigo.UI.Web\Unip.SuperSisAmigo.DataAccess\bin\Debug\Unip.SuperSisAmigo.DataAccess.pdb
+E:\Cursos\LGroup\Unip.SuperSisAmigo.UI.Web\Unip.SuperSisAmigo.DataAccess\bin\Debug\EntityFramework.dll
+E:\Cursos\LGroup\Unip.SuperSisAmigo.UI.Web\Unip.SuperSisAmigo.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+E:\Cursos\LGroup\Unip.SuperSisAmigo.UI.Web\Unip.SuperSisAmigo.DataAccess\bin\Debug\Unip.SuperSisAmigo.Entities.dll
+E:\Cursos\LGroup\Unip.SuperSisAmigo.UI.Web\Unip.SuperSisAmigo.DataAccess\bin\Debug\Unip.SuperSisAmigo.Entities.pdb
+E:\Cursos\LGroup\Unip.SuperSisAmigo.UI.Web\Unip.SuperSisAmigo.DataAccess\bin\Debug\EntityFramework.xml
+E:\Cursos\LGroup\Unip.SuperSisAmigo.UI.Web\Unip.SuperSisAmigo.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+E:\Cursos\LGroup\Unip.SuperSisAmigo.UI.Web\Unip.SuperSisAmigo.DataAccess\obj\Debug\Unip.SuperSisAmigo.DataAccess.csprojResolveAssemblyReference.cache
+E:\Cursos\LGroup\Unip.SuperSisAmigo.UI.Web\Unip.SuperSisAmigo.DataAccess\obj\Debug\Unip.SuperSisAmigo.DataAccess.Migrations.InitialCreate.resources
+E:\Cursos\LGroup\Unip.SuperSisAmigo.UI.Web\Unip.SuperSisAmigo.DataAccess\obj\Debug\Unip.SuperSisAmigo.DataAccess.Migrations.EnderecoNumeroBackup.resources
+E:\Cursos\LGroup\Unip.SuperSisAmigo.UI.Web\Unip.SuperSisAmigo.DataAccess\obj\Debug\Unip.SuperSisAmigo.DataAccess.csproj.GenerateResource.Cache
+E:\Cursos\LGroup\Unip.SuperSisAmigo.UI.Web\Unip.SuperSisAmigo.DataAccess\obj\Debug\Unip.SuperSisAmigo.DataAccess.dll
+E:\Cursos\LGroup\Unip.SuperSisAmigo.UI.Web\Unip.SuperSisAmigo.DataAccess\obj\Debug\Unip.SuperSisAmigo.DataAccess.pdb

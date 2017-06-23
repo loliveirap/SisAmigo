@@ -1,0 +1,38 @@
+﻿
+@model AmigoViewModel
+
+
+@using (Html.BeginForm())
+{
+    <div class="input-group">
+        <div class="input-row">
+            @Html.ValidationMessage("HACKER")
+        </div>
+        <div class="input-row">
+            @Html.LabelFor(x => x.Nome)
+            @Html.TextBoxFor(x => x.Nome, new { maxlength = "30" })
+            @Html.ValidationMessageFor(x => x.Nome)
+        </div>
+        <div class="input-row">
+            @Html.LabelFor(x => x.Email)
+            @Html.TextBoxFor(x => x.Email)
+            @Html.ValidationMessageFor(x => x.Email)
+        </div>
+        <div class="input-row">
+            @Html.LabelFor(x => x.Telefone)
+            @Html.TextBoxFor(x => x.Telefone)
+            @Html.ValidationMessageFor(x => x.Telefone)
+        </div>
+        <div class="input-row">
+            @Html.LabelFor(x => x.DataNascimento)
+            @Html.TextBoxFor(x => x.DataNascimento)
+            @Html.ValidationMessageFor(x => x.DataNascimento)
+        </div>
+        @Html.Br()
+        <div>  
+            <button class="btn waves-effect waves-light" type="reset" id="limpar" name="limpar">Limpar</button>
+            <button class="btn waves-effect waves-light" type="submit" name="action">Salvar</button>
+        </div>
+        
+    </div>
+}

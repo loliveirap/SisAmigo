@@ -1,0 +1,50 @@
+﻿@model IEnumerable<AmigoViewModel>
+
+@{
+    //ViewBag é uma forma de armazenamento de dados exclusiva do mvc
+    //Sempre que quisermos levar infomrações da página filha para a página pai 
+    //Uma das formas é de levar dentro de uma viewbag
+    //ViewBag é usado em duas situações: 
+    //1 - Levar dados da filha pro Pai
+    //2 - Levar dados do Controller pra página
+    
+    ViewBag.Titulo = "Listar";
+    //Layout = "~/Views/Shared/_LayoutPadrao.cshtml";
+}
+
+<table class="hoverable">
+    <thead>
+        <tr>
+            <th>Exluir</th>
+            <th>Editar</th>
+            <th data-field="id">Nome</th>
+            <th data-field="name">E-Mail</th>
+            <th data-field="price">Telefone</th>
+            <th data-field="price">Data Nascimento</th>
+            <th data-field="price">Sexo</th>
+            <th data-field="price">Estado Civil</th>
+            <th data-field="price">Endereço</th>
+            <th data-field="price">N</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var amigo in Model)
+        {
+            <tr>
+                <td><a href="/Amigo/Excluir/@amigo.Codigo"><i class="mdi-action-delete small"></i></a></td>
+                <td><a href="/Amigo/Editar/@amigo.Codigo"><i class="mdi-editor-mode-edit"></i></a></td>
+                <td>@amigo.Nome</td>
+                <td>@amigo.Email</td>
+                <td>@amigo.Telefone</td>
+                <td>@amigo.DataNascimento.Value.ToShortDateString()</td>
+                <td>@amigo.Sexo.Descricao</td>
+                <td>@amigo.EstadoCivil.Descricao</td>
+                <td>@amigo.Endereco</td>
+                <td>@amigo.Numero</td>
+
+            </tr>
+        }
+    </tbody>
+</table>
+
